@@ -14,11 +14,15 @@
             }
         </style>
     </head>
+    
     <body>
 
         <script>
-            ultimoNome = window.prompt("Qual o seu ultimo nome?")
-            window.alert(`Seu ultimo nome em letras maiusculas fica: ${ultimoNome.toUpperCase()} e tem um total de ${ultimoNome.length} letras.`)
+            anoNasc = Number(window.prompt("Qual o seu ano de nascimento ?"))
+            anoAtual = Number(window.prompt("E qual é o ano atual, espertinho?"))
+            idade = anoAtual - anoNasc
+            window.confirm(`Então você tem ${idade-1} ou ${idade} anos certo ?`)
+            window.alert(`É, eu sou realmente um gênio ! :D`)
         </script>
             
     </body>
