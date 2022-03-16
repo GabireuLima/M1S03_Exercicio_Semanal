@@ -17,11 +17,23 @@
     <body>
 
         <script>
-            window.alert ("Olá anônimo, você acaba de entrar no meu site !")
-            window.confirm ("Você deseja continuar a sua sessão nesse site ?")
-            nome = window.prompt ("Qual o seu nome ?")
-            window.alert ("Seja bem vindo " + nome + "!")
+            nome = window.prompt ("Qual é o seu nome ?")
+            idade = Number.parseInt(window.prompt ("Qual a sua idade ?"))
+            esporte = window.confirm ("Você gosta de praticar esportes?")
+            window.alert ("Deixa eu adivinhar... seu nome é " + nome + 
+            " você tem " + idade + " anos e é " + esporte + " que você gosta de praticar esportes !")
+            
+            var tiponome = typeof nome
+            var tipoidade = typeof idade
+            var tipoesporte = typeof esporte
+
+            window.alert("O tipo primitivo do seu nome é: " + (tiponome))
+            window.alert("O tipo primitivo de sua idade é: " + (tipoidade))
+            window.alert("O tipo primitivo de sua resposta é: " + (tipoesporte))
+            window.alert("Obrigado !")
+
         </script>
+
 
         <h1>Olá !</h1>
 
