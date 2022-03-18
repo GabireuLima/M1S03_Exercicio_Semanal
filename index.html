@@ -19,35 +19,18 @@
     <body>
 
         <script>
-            do{
-                var operacao = prompt("Digite a operação que deseja fazer 'opções: +, -, * ou /'");
-            } while (operacao!="+" && operacao !="-" && operacao!="*" && operacao!="/")
-
-            var num1 = parseFloat(prompt("Digite o primeiro valor: "))
             
-            var num2 = parseFloat(prompt("Digite o segundo valor: "))
-            
-            switch(operacao){
-                case "+":
-                    resultado = num1+num2
-                    alert(`O resultado da soma de ${num1} e ${num2} é igual a ${resultado}`)
-                    break
-                
-                case "-":
-                    resultado = num1-num2
-                    alert(`O resultado da subtração de ${num1} e ${num2} é igual a ${resultado}`)
-                    break
-                
-                case "*":
-                    resultado = num1*num2
-                    alert(`O resultado da multiplicação de ${num1} e ${num2} é igual a ${resultado}`)
-                    break
-                
-                case "/":
-                    resultado = num1/num2
-                    alert(`O resultado da divisão de ${num1} por ${num2} é igual a ${resultado}`)
-                    break      
+            function adicionaZero(number){
+                if (number <= 9) 
+                    return "0" + number;
+                else
+                    return number;
             }
+
+            var data = new Date
+
+            formatHorario = adicionaZero(data.getHours().toString()) + ":" + adicionaZero(data.getMinutes().toString())
+            alert(`São ${formatHorario}`)
 
         </script>
 
