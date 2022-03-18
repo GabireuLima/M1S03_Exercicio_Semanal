@@ -2,6 +2,7 @@
 <html lang="pt-BR">
     <head>
         <meta charset="UTF-8">
+        <meta author="Gabriel">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>M1S03_Projeto_01</title>
@@ -18,16 +19,40 @@
     <body>
 
         <script>
-            anoNasc = Number(window.prompt("Qual o seu ano de nascimento ?"))
-            anoAtual = Number(window.prompt("E qual é o ano atual, espertinho?"))
-            idade = anoAtual - anoNasc
-            window.confirm(`Então você tem ${idade-1} ou ${idade} anos certo ?`)
-            window.alert(`É, eu sou realmente um gênio ! :D`)
+            do{
+                var operacao = prompt("Digite a operação que deseja fazer 'opções: +, -, * ou /'");
+            } while (operacao!="+" && operacao !="-" && operacao!="*" && operacao!="/")
+
+            var num1 = parseFloat(prompt("Digite o primeiro valor: "))
             
+            var num2 = parseFloat(prompt("Digite o segundo valor: "))
+            
+            switch(operacao){
+                case "+":
+                    resultado = num1+num2
+                    alert(`O resultado da soma de ${num1} e ${num2} é igual a ${resultado}`)
+                    break
+                
+                case "-":
+                    resultado = num1-num2
+                    alert(`O resultado da subtração de ${num1} e ${num2} é igual a ${resultado}`)
+                    break
+                
+                case "*":
+                    resultado = num1*num2
+                    alert(`O resultado da multiplicação de ${num1} e ${num2} é igual a ${resultado}`)
+                    break
+                
+                case "/":
+                    resultado = num1/num2
+                    alert(`O resultado da divisão de ${num1} por ${num2} é igual a ${resultado}`)
+                    break      
+            }
+
         </script>
-            
+
+
+            <h1>Olá ! :D</h1>
+
     </body>
-
-    <h1>Olá ! :D</h1>
-
 </html>
