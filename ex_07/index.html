@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Ex 07 - Pergunte o ano atual e o ano de nascimento, exiba na tela a idade</title>
+        <style>
+            body{
+                background-color: rgb(161, 161, 252);
+                font-size: 40px;
+                font-family: Arial, Helvetica, sans-serif;
+                color: white;
+            }
+        </style>
+    </head>
+    <body>
+        
+        <script>
+
+            anoNasc = Number(window.prompt("Qual o seu ano de nascimento ?"))
+            anoAtual = Number(window.prompt("E qual é o ano atual, espertinho?"))
+            idade = anoAtual - anoNasc
+            window.confirm(`Então você tem ${idade-1} ou ${idade} anos certo ?`)
+            window.alert(`É, eu sou realmente um gênio ! :D`)
+            
+        </script>
+        
+
+        <h1>Olá !</h1>
+
+    </body>
+</html>
